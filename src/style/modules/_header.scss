@@ -1,0 +1,31 @@
+$header-height: 5rem;
+.header {
+  background-color: $primary-color;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top:0;
+  align-items: center;
+  height: $header-height;
+  z-index: 10;
+}
+
+.pokemon-logo {
+  width: 7rem;
+}
+.nav-link {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  width: 20vw;
+  align-items: center;
+}
+.base-link{
+  cursor: pointer;
+  flex-grow:1;
+  flex-basis: 0;
+}
+.collection-link{
+  flex-grow:1;
+  flex-basis:0;
+}

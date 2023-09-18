@@ -1,0 +1,28 @@
+.search-input{
+  border-color: $primary-color;
+  border-style: solid;
+  border-radius: 0.3rem;
+  padding:0.2rem;
+  width: 25vw;
+  z-index: 99;
+  @extend .btn-shadow-inset;
+  @extend .btn-outline-primary;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: white;
+}
+.input-container{
+  position:sticky;
+  top:$header-height/1.25;
+  z-index:101 ;
+}
+

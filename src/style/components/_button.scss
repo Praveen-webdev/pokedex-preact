@@ -1,0 +1,162 @@
+
+.btn {
+  border-style: none;
+  border-radius: 0.25rem;
+  padding: 0.3rem;
+}
+.btn-med {
+  font-size: 1.5rem;
+}
+.btn-primary {
+  background-color: $primary-color;
+  color: lighten($bg-color, 20%);
+}
+.btn-primary:hover{
+ @extend .btn-shadow-inset;
+  transition:background-color  0.2s ease-in;
+}
+.btn-outline-primary{
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color:$primary-color;
+  background-color:$bg-color ;
+  color: white;
+}
+.btn-outline-primary:hover{
+  background-color: $primary-color;
+  color:$bg-color;
+  transition: background-color 0.2s ease-in;
+}
+.btn-secondary {
+  background-color: $secondary-color;
+  color:white;
+}
+.btn-dark {
+  background-color: $dark-color;
+}
+.btn-success {
+  background-color: $success-color;
+}
+.btn-warning {
+  background-color: $warning-color;
+  color:rgb(67, 66, 66);
+}
+.btn-error {
+  background-color: $error-color;
+}
+.btn-pill {
+  border-radius: 12.5px;
+}
+.rounded {
+  border-radius: 50%;
+}
+.btn-pale {
+  background-color: #edeade;
+}
+.btn-black {
+  color: black;
+}
+.btn-square{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:2rem;
+  height: 2rem;
+}
+
+.btn-shadow-inset {
+  box-shadow:
+  rgba(50, 50, 93, 0.75) 0px 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.8) 0px 18px 36px -18px inset;
+}
+.btn-shadow-outline {
+  -webkit-box-shadow: 1px 3px 27px -8px rgba(255,255,255,1);
+  -moz-box-shadow: 1px 3px 27px -8px rgba(255,255,255,1);
+  box-shadow: 1px 3px 27px -8px rgba(255,255,255,1);
+}
+.btn-group{
+  display: flex;
+  flex-direction: column;
+  gap:0.3rem;
+}
+.active{
+ @extend .btn-shadow-inset;
+  color:$primary-color;
+  width: inherit;
+}
+.btn-fixed-br {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 200;
+}
+.btn-to-top{
+  padding: 1rem;
+  background-color:white;
+  border-radius: 50%;
+  border-color: $primary-color;
+  border-style: solid;
+}
+.normal {
+  background-color: #A8A878;
+}
+
+.fighting {
+  background-color: #C03028;
+}
+
+.flying {
+  background-color: #A890F0;
+}
+
+.poison {
+  background-color: #A040A0;
+}
+
+.ground {
+  background-color: #E0C068;
+}
+
+.rock {
+  background-color: #B8A038;
+}
+
+.bug {
+  background-color: #A8B820;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #B8B8D0;
+}
+
+.fire {
+  background-color: #F08030;
+}
+
+.water {
+  background-color: #6890F0;
+}
+
+.grass {
+  background-color: #78C850;
+}
+
+.electric {
+  background-color: #F8D030;
+}
+
+.psychic {
+  background-color: #F85888;
+}
+
+.ice {
+  background-color: #98D8D8;
+}
+
+.dragon {
+  background-color: #7038F8
+}

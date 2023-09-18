@@ -1,0 +1,15 @@
+$primary-color: #FFCB05;
+$secondary-color: #3D7DCA;
+$success-color: #66BB6A;
+$warning-color: #FFA726;
+$error-color: #EF5350;
+$dark-color: rgb(116, 107, 107);
+$bg-color: rgb(43, 40, 40);
+@import "base/normalize";
+@import "components/button";
+@import "modules/header";
+@import "base/layout";
+@import "components/input";
+@import "components/card";
+@import "components/pokeball";
+@import "modules/pokemon";

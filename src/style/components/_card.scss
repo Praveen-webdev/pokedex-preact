@@ -1,0 +1,84 @@
+$poke-card-width: 8rem;
+$poke-card-width-mobile: ($poke-card-width)-2;
+$push-btn-outside-width: $poke-card-width /8;
+$push-btn-inside-width: $poke-card-width/13;
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $error-color;
+  min-width: $poke-card-width;
+  min-height: $poke-card-width;
+  overflow: hidden;
+  cursor: pointer;
+  .profile-img {
+    max-width: 5rem;
+    min-height: 6rem;
+  }
+
+  .profile-title {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(247, 241, 241);
+    color: black;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    &::before {
+      display: block;
+      content: '';
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  &:hover {
+    @extend .btn-shadow-outline;
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in-out;
+    .profile-img {
+      scale: 1.2;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.push-btn {
+  position: relative;
+}
+.push-btn::after {
+  content: '';
+  display: flex;
+  width: $push-btn-outside-width;
+  height: $push-btn-outside-width;
+  background-color: rgb(205, 200, 200);
+  border: solid black 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.push-btn::before {
+  content: '';
+  display: flex;
+  width: $push-btn-inside-width;
+  height: $push-btn-inside-width;
+  background-color: rgb(232, 224, 224);
+  border: solid black 2px;
+  border-radius: 50%;
+  position: absolute;
+  top: $poke-card-width/1.42;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+
+
+
+@media all and (max-width: 768px) {
+  .profile-card {
+    min-width: $poke-card-width-mobile;
+    transition: all 0.3s ease;
+  }
+ 
+}
